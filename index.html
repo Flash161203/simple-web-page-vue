@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stories List</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Stories List</h1>
+
+      <div id="stories-container">
+        <!-- Stories will be dynamically added here -->
+      </div>
+
+      <button
+        id="load-more-button"
+        class="load-more-button"
+        @click="loadStories"
+        v-if="!isAllStoriesLoaded"
+      >
+        Load More Stories
+      </button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="./app.js" />
+  </body>
+</html>
