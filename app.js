@@ -9,6 +9,7 @@ let app = Vue.createApp({
   },
 
   methods: {
+    // Load the stories from the given API URL
     async getStories(apiUrl) {
       try {
         // Make a GET request
@@ -44,7 +45,7 @@ let app = Vue.createApp({
       }
     },
 
-    // Function to render stories
+    // Function to render the stories
     renderStories(storyList) {
       var storiesContainer = document.getElementById("stories-container");
 
@@ -86,6 +87,7 @@ let app = Vue.createApp({
       }
     },
 
+    // Function to load the initial set of stories
     async initialLoad() {
       const stories = await this.getStories(this.apiBaseUrl);
       this.renderStories(stories);
