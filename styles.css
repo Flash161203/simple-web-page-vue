@@ -1,0 +1,23 @@
+.story {
+  display: flex;
+  margin-bottom: 20px;
+}
+.story-image {
+  width: 200px;
+  height: 150px;
+  margin-right: 10px;
+}
+.story-content {
+  flex-grow: 1;
+}
+.story-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.story-snippet {
+  font-size: 14px;
+}
+.load-more-button {
+  margin-top: 20px;
+}
